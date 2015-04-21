@@ -30,7 +30,7 @@ public class GestionFormation {
 	
 	
 	//Méthode permettant de saisir les infos d'une formation
-	public void saisieFormation();
+	public void saisieFormation(){};
 	
 	
 	//Methode permettant de saisir une liste de stagiaires initiale pour une formation donnée

@@ -16,12 +16,12 @@ public class GestionFormation {
 	
 	// CONSTRUCTEUR PAR DEFAUT
 	private GestionFormation(){
-		
+		test
 	}
 	
 	/**
-	 * Ajoute une personne à la liste
-	 * @param p la personne à ajouter
+	 * Ajoute une personne Ã  la liste
+	 * @param p la personne Ã  ajouter
 	 */
 	public void ajouter(Stagiaire s, Formation f){
 		f.lstStagiaire.add(s);
@@ -29,17 +29,17 @@ public class GestionFormation {
 	}
 	
 	
-	//Méthode permettant de saisir les infos d'une formation
+	//MÃ©thode permettant de saisir les infos d'une formation
 	public void saisieFormation(){};
 	
 	
-	//Methode permettant de saisir une liste de stagiaires initiale pour une formation donnée
+	//Methode permettant de saisir une liste de stagiaires initiale pour une formation donnÃ©e
 	public void saisieStagiaire(Formation f){
 		String reponse="oui";
 		int iter=1;
 		while (reponse.equals("oui")){
 			Stagiaire s=new Stagiaire();
-			System.out.println("Quel est le Prénom du stagiaire numero "+iter+" ?");
+			System.out.println("Quel est le PrÃ©nom du stagiaire numero "+iter+" ?");
 			s.setPrenom(Util.lireString());
 			System.out.println("Quel est son Nom ?");
 			s.setNom(Util.lireString());
@@ -51,7 +51,7 @@ public class GestionFormation {
 			Util.lireString();
 			reponse=Util.lireString();
 		}
-		Util.afficher("Inscriptions terminées ! ");
+		Util.afficher("Inscriptions terminÃ©es ! ");
 		
 	}
 }

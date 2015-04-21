@@ -20,7 +20,7 @@ import java.util.Scanner;
 	 */
 	public static void afficher(String texte){
 
-		System.out.println(texte);
+		System.out.println(texte+"\n");
 	}
 	
 	/**
@@ -30,6 +30,7 @@ import java.util.Scanner;
 	public static int lireInt(){
 		int result=0;
 		result = sc.nextInt();
+		System.out.println();
 		return result;
 	}
 	
@@ -40,8 +41,20 @@ import java.util.Scanner;
 	public static String lireString(){
 		String result=null;
 		result = sc.nextLine();
+		System.out.println();
 		return result;
 	}
+	public static String getString(String prompt) {
+	    System.out.print(prompt + " ");
+	    return sc.nextLine();
+	  }
+	public static int getInt(String prompt) {
+	    System.out.print(prompt + " ");
+	    int entier = sc.nextInt();
+	    sc.nextLine(); // Get rid of this line
+	    // so that getString won't read it
+	    return entier;
+	  }
 	
 	public static void closeSc(){
 		sc.nextLine();

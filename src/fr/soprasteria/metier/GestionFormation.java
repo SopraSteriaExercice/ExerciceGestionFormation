@@ -1,5 +1,9 @@
 package fr.soprasteria.metier;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import fr.soprasteria.util.Util;
 
 public class GestionFormation {
@@ -28,28 +32,25 @@ public class GestionFormation {
 	}
 	
 	
-	//MÃ©thode permettant de saisir les infos d'une formation
+	//Methode permettant de saisir les infos d'une formation
 	public void saisieFormation(){};
 	
 	
-	//Methode permettant de saisir une liste de stagiaires initiale pour une formation donnÃ©e
+	//Methode permettant de saisir une liste de stagiaires initiale pour une formation donnee
 	public void saisieStagiaire(Formation f){
 		String reponse="oui";
 		int iter=1;
 		while (reponse.equals("oui")){
 			Stagiaire s=new Stagiaire();
-			System.out.println("Quel est le Prénom du stagiaire numero "+iter+" ?");
-			s.setPrenom(Util.lireString());
-			System.out.println("Quel est son Nom ?");
-			s.setNom(Util.lireString());
-			System.out.println("Quel est son age ?");
-			s.setAge(Util.lireInt());
+			s.setPrenom(Util.getString("Quel est le Prénom du stagiaire numero "+iter+" ?"));
+			s.setNom(Util.getString("Quel est son Nom ?"));
+			s.setAge(Util.getInt("Quel est son age ?"));
 			ajouter(s,f);
 			iter++;
-			Util.afficher("Stagiaire inscrit ! Inscrire d'autres stagiaires ? (oui/non)");
-			reponse=Util.lireString();
+			reponse=Util.getString("Stagiaire inscrit ! Inscrire d'autres stagiaires ? (oui/non)");
 		}
-		Util.afficher("Inscriptions terminÃ©es ! ");
+		Util.afficher("Inscriptions terminees ! ");
+		
 		
 	}
 }

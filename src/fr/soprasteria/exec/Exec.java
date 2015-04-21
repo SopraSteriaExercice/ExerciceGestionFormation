@@ -13,6 +13,7 @@ public class Exec {
 		//Util.afficher(form.getNom()); //On vérifie la bonne entrée du nom de formation
 		GestionFormation.getInstance().saisieStagiaire(form);
 		
+		//YOUPITRALALA
 	}
 
 }

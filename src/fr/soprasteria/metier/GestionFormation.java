@@ -24,8 +24,8 @@ public class GestionFormation {
 	}
 	
 	/**
-	 * Ajoute une personne à la liste
-	 * @param p la personne à ajouter
+	 * Ajoute une personne ï¿½ la liste
+	 * @param p la personne ï¿½ ajouter
 	 */
 	private void ajouter(Stagiaire s, Formation f){
 		f.lstStagiaire.add(s);
@@ -41,7 +41,7 @@ public class GestionFormation {
 			somme=somme+(double)(current.getAge());
 		}
 		moyenne=somme/(double)(f.lstStagiaire.size());
-		System.out.println("La moyenne d'âge des stagiaires de la formation '"+f.getNom()+"' est de "+moyenne+" ans");
+		System.out.println("La moyenne d'ï¿½ge des stagiaires de la formation '"+f.getNom()+"' est de "+moyenne+" ans");
 	}
 	
 	
@@ -62,7 +62,7 @@ public class GestionFormation {
 		
 		try {
 		
-		date = simpleDateFormat.parse(ddf);
+		date = simpleDateFormat.parse(ddf); 
 		
 		System.out.println("Debut de la formation le "+formater.format(date));
 		
@@ -76,8 +76,8 @@ public class GestionFormation {
 		e.printStackTrace();
 		
 		}
-		Util.afficher("Ok, la formation '"+f.getNom()+"' qui débute le "+formater.format(date)+" a bien été enregistrée");
-		Util.afficher("");
+		Util.afficher("Ok, la formation '"+f.getNom()+"' qui dï¿½bute le "+formater.format(date)+" a bien ï¿½tï¿½ enregistrï¿½e");
+		//Util.afficher("");
 		return f;
 	}
 	
@@ -88,15 +88,15 @@ public class GestionFormation {
 		int iter=1;
 		while (reponse.equals("oui")){
 			Stagiaire s=new Stagiaire();
-			s.setPrenom(Util.getString("Quel est le Prénom du stagiaire numero "+iter+" ?"));
+			s.setPrenom(Util.getString("Quel est le Prï¿½nom du stagiaire numero "+iter+" ?"));
 			s.setNom(Util.getString("Quel est son Nom ?"));
 			s.setAge(Util.getInt("Quel est son age ?"));
 			ajouter(s,f);
 			iter++;
 			reponse=Util.getString("Stagiaire inscrit ! Inscrire d'autres stagiaires ? (oui/non)");
 		}
-		Util.afficher("Inscriptions terminées ! ");
-		Util.afficher("");
+		Util.afficher("Inscriptions terminï¿½es ! ");
+		//Util.afficher("");
 		Util.afficher("Vous venez d'inscrire:");
 		for (Stagiaire current : f.lstStagiaire){
 			StringBuffer st = new StringBuffer();

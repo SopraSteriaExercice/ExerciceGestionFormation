@@ -1,9 +1,5 @@
 package fr.soprasteria.metier;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import fr.soprasteria.util.Util;
 
 public class GestionFormation {

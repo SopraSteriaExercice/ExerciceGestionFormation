@@ -38,16 +38,15 @@ public class GestionFormation {
 		int iter=1;
 		while (reponse.equals("oui")){
 			Stagiaire s=new Stagiaire();
-			System.out.println("Quel est le Prénom du stagiaire numero "+iter+" ?");
+			System.out.println("Quel est le Pr�nom du stagiaire numero "+iter+" ?");
 			s.setPrenom(Util.lireString());
 			System.out.println("Quel est son Nom ?");
 			s.setNom(Util.lireString());
-			System.out.println("Quel est son Age ?");
+			System.out.println("Quel est son age ?");
 			s.setAge(Util.lireInt());
 			ajouter(s,f);
 			iter++;
 			Util.afficher("Stagiaire inscrit ! Inscrire d'autres stagiaires ? (oui/non)");
-			Util.lireString();
 			reponse=Util.lireString();
 		}
 		Util.afficher("Inscriptions terminées ! ");

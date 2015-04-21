@@ -16,7 +16,6 @@ public class GestionFormation {
 	
 	// CONSTRUCTEUR PAR DEFAUT
 	private GestionFormation(){
-		test
 	}
 	
 	/**

@@ -10,7 +10,7 @@ public class Exec {
 		GestionFormation.getInstance().saisieStagiaire(f);
 		GestionFormation.getInstance().moyenne(f);
 		//new TestBufferedWriter("sauvegarde.txt");
-		//Util.afficher(form.getNom()); //On v�rifie la bonne entr�e du nom de formation
+		//Util.afficher(form.getNom()); //On verifie la bonne entree du nom de formation
 
 		
 		

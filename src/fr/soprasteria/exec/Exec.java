@@ -11,8 +11,6 @@ public class Exec {
 		GestionFormation.getInstance().moyenne(f);
 		//new TestBufferedWriter("sauvegarde.txt");
 		//Util.afficher(form.getNom()); //On verifie la bonne entree du nom de formation
-		
-		// LOLCATS
 
 		
 		
